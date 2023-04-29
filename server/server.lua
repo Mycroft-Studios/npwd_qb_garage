@@ -29,7 +29,7 @@ RegisterNetEvent("npwd:qb-garage:getVehicles", function()
 				v.brand = QBCore.Shared.Vehicles[vehicleModel].brand
 			end
 
-			if (Garages[v.garage] ~= nil) then
+			if (Config?.Garages?[v.garage] ~= nil) then
 				v.garage = Garages[v.garage].label
 			else
 				v.garage = "Unknown Garage"
