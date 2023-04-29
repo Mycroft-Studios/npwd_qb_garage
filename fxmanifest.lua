@@ -2,6 +2,7 @@ fx_version "cerulean"
 game "gta5"
 
 client_script 'client/client.lua'
+lua54 'yes'
 server_script {
     'server/server.lua',
     '@oxmysql/lib/MySQL.lua',
